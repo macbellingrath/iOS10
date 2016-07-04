@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E6118B991D2998FF00FC1D9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6118B981D2998FF00FC1D9D /* AppDelegate.swift */; };
+		E6118B9E1D2998FF00FC1D9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6118B9C1D2998FF00FC1D9D /* Main.storyboard */; };
+		E6118BA01D2998FF00FC1D9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6118B9F1D2998FF00FC1D9D /* Assets.xcassets */; };
+		E6118BA31D2998FF00FC1D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6118BA11D2998FF00FC1D9D /* LaunchScreen.storyboard */; };
+		E6118BAE1D2998FF00FC1D9D /* UnicornTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6118BAD1D2998FF00FC1D9D /* UnicornTests.swift */; };
+		E6118BB91D2998FF00FC1D9D /* UnicornUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6118BB81D2998FF00FC1D9D /* UnicornUITests.swift */; };
+		E6118BCD1D29993400FC1D9D /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6118BCC1D29993400FC1D9D /* IntentHandler.swift */; };
+		E6118BD61D29993400FC1D9D /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6118BD51D29993400FC1D9D /* IntentsUI.framework */; };
+		E6118BD91D29993400FC1D9D /* WorkoutIntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6118BD81D29993400FC1D9D /* WorkoutIntentViewController.swift */; };
+		E6118BDC1D29993400FC1D9D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6118BDA1D29993400FC1D9D /* MainInterface.storyboard */; };
+		E6118BE01D29993400FC1D9D /* UnicornIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6118BD31D29993400FC1D9D /* UnicornIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6118BE31D29993400FC1D9D /* UnicornIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E6118BCA1D29993400FC1D9D /* UnicornIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E6118BEC1D299A3900FC1D9D /* UNCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6118BEB1D299A3900FC1D9D /* UNCollectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6118BAA1D2998FF00FC1D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6118B8D1D2998FF00FC1D9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6118B941D2998FF00FC1D9D;
+			remoteInfo = Unicorn;
+		};
+		E6118BB51D2998FF00FC1D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6118B8D1D2998FF00FC1D9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6118B941D2998FF00FC1D9D;
+			remoteInfo = Unicorn;
+		};
+		E6118BDE1D29993400FC1D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6118B8D1D2998FF00FC1D9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6118BD21D29993400FC1D9D;
+			remoteInfo = UnicornIntentsUI;
+		};
+		E6118BE11D29993400FC1D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6118B8D1D2998FF00FC1D9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6118BC91D29993400FC1D9D;
+			remoteInfo = UnicornIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6118BEA1D29993400FC1D9D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E6118BE01D29993400FC1D9D /* UnicornIntentsUI.appex in Embed App Extensions */,
+				E6118BE31D29993400FC1D9D /* UnicornIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E6118B951D2998FF00FC1D9D /* Unicorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unicorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6118B981D2998FF00FC1D9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6118B9D1D2998FF00FC1D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6118B9F1D2998FF00FC1D9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6118BA21D2998FF00FC1D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E6118BA41D2998FF00FC1D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6118BA91D2998FF00FC1D9D /* UnicornTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnicornTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6118BAD1D2998FF00FC1D9D /* UnicornTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicornTests.swift; sourceTree = "<group>"; };
+		E6118BAF1D2998FF00FC1D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6118BB41D2998FF00FC1D9D /* UnicornUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnicornUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6118BB81D2998FF00FC1D9D /* UnicornUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicornUITests.swift; sourceTree = "<group>"; };
+		E6118BBA1D2998FF00FC1D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6118BCA1D29993400FC1D9D /* UnicornIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnicornIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6118BCC1D29993400FC1D9D /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E6118BCE1D29993400FC1D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6118BD31D29993400FC1D9D /* UnicornIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = UnicornIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6118BD51D29993400FC1D9D /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E6118BD81D29993400FC1D9D /* WorkoutIntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutIntentViewController.swift; sourceTree = "<group>"; };
+		E6118BDB1D29993400FC1D9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E6118BDD1D29993400FC1D9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6118BEB1D299A3900FC1D9D /* UNCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UNCollectionViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6118B921D2998FF00FC1D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BA61D2998FF00FC1D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BB11D2998FF00FC1D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BC71D29993400FC1D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BD01D29993400FC1D9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BD61D29993400FC1D9D /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6118B8C1D2998FF00FC1D9D = {
+			isa = PBXGroup;
+			children = (
+				E6118B971D2998FF00FC1D9D /* Unicorn */,
+				E6118BAC1D2998FF00FC1D9D /* UnicornTests */,
+				E6118BB71D2998FF00FC1D9D /* UnicornUITests */,
+				E6118BCB1D29993400FC1D9D /* UnicornIntents */,
+				E6118BD71D29993400FC1D9D /* UnicornIntentsUI */,
+				E6118BD41D29993400FC1D9D /* Frameworks */,
+				E6118B961D2998FF00FC1D9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E6118B961D2998FF00FC1D9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E6118B951D2998FF00FC1D9D /* Unicorn.app */,
+				E6118BA91D2998FF00FC1D9D /* UnicornTests.xctest */,
+				E6118BB41D2998FF00FC1D9D /* UnicornUITests.xctest */,
+				E6118BCA1D29993400FC1D9D /* UnicornIntents.appex */,
+				E6118BD31D29993400FC1D9D /* UnicornIntentsUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E6118B971D2998FF00FC1D9D /* Unicorn */ = {
+			isa = PBXGroup;
+			children = (
+				E6118BEB1D299A3900FC1D9D /* UNCollectionViewController.swift */,
+				E6118B981D2998FF00FC1D9D /* AppDelegate.swift */,
+				E6118B9C1D2998FF00FC1D9D /* Main.storyboard */,
+				E6118B9F1D2998FF00FC1D9D /* Assets.xcassets */,
+				E6118BA11D2998FF00FC1D9D /* LaunchScreen.storyboard */,
+				E6118BA41D2998FF00FC1D9D /* Info.plist */,
+			);
+			path = Unicorn;
+			sourceTree = "<group>";
+		};
+		E6118BAC1D2998FF00FC1D9D /* UnicornTests */ = {
+			isa = PBXGroup;
+			children = (
+				E6118BAD1D2998FF00FC1D9D /* UnicornTests.swift */,
+				E6118BAF1D2998FF00FC1D9D /* Info.plist */,
+			);
+			path = UnicornTests;
+			sourceTree = "<group>";
+		};
+		E6118BB71D2998FF00FC1D9D /* UnicornUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E6118BB81D2998FF00FC1D9D /* UnicornUITests.swift */,
+				E6118BBA1D2998FF00FC1D9D /* Info.plist */,
+			);
+			path = UnicornUITests;
+			sourceTree = "<group>";
+		};
+		E6118BCB1D29993400FC1D9D /* UnicornIntents */ = {
+			isa = PBXGroup;
+			children = (
+				E6118BCC1D29993400FC1D9D /* IntentHandler.swift */,
+				E6118BCE1D29993400FC1D9D /* Info.plist */,
+			);
+			path = UnicornIntents;
+			sourceTree = "<group>";
+		};
+		E6118BD41D29993400FC1D9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6118BD51D29993400FC1D9D /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6118BD71D29993400FC1D9D /* UnicornIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				E6118BD81D29993400FC1D9D /* WorkoutIntentViewController.swift */,
+				E6118BDA1D29993400FC1D9D /* MainInterface.storyboard */,
+				E6118BDD1D29993400FC1D9D /* Info.plist */,
+			);
+			path = UnicornIntentsUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6118B941D2998FF00FC1D9D /* Unicorn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6118BBD1D2998FF00FC1D9D /* Build configuration list for PBXNativeTarget "Unicorn" */;
+			buildPhases = (
+				E6118B911D2998FF00FC1D9D /* Sources */,
+				E6118B921D2998FF00FC1D9D /* Frameworks */,
+				E6118B931D2998FF00FC1D9D /* Resources */,
+				E6118BEA1D29993400FC1D9D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6118BDF1D29993400FC1D9D /* PBXTargetDependency */,
+				E6118BE21D29993400FC1D9D /* PBXTargetDependency */,
+			);
+			name = Unicorn;
+			productName = Unicorn;
+			productReference = E6118B951D2998FF00FC1D9D /* Unicorn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6118BA81D2998FF00FC1D9D /* UnicornTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6118BC01D2998FF00FC1D9D /* Build configuration list for PBXNativeTarget "UnicornTests" */;
+			buildPhases = (
+				E6118BA51D2998FF00FC1D9D /* Sources */,
+				E6118BA61D2998FF00FC1D9D /* Frameworks */,
+				E6118BA71D2998FF00FC1D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6118BAB1D2998FF00FC1D9D /* PBXTargetDependency */,
+			);
+			name = UnicornTests;
+			productName = UnicornTests;
+			productReference = E6118BA91D2998FF00FC1D9D /* UnicornTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6118BB31D2998FF00FC1D9D /* UnicornUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6118BC31D2998FF00FC1D9D /* Build configuration list for PBXNativeTarget "UnicornUITests" */;
+			buildPhases = (
+				E6118BB01D2998FF00FC1D9D /* Sources */,
+				E6118BB11D2998FF00FC1D9D /* Frameworks */,
+				E6118BB21D2998FF00FC1D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6118BB61D2998FF00FC1D9D /* PBXTargetDependency */,
+			);
+			name = UnicornUITests;
+			productName = UnicornUITests;
+			productReference = E6118BB41D2998FF00FC1D9D /* UnicornUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E6118BC91D29993400FC1D9D /* UnicornIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6118BE71D29993400FC1D9D /* Build configuration list for PBXNativeTarget "UnicornIntents" */;
+			buildPhases = (
+				E6118BC61D29993400FC1D9D /* Sources */,
+				E6118BC71D29993400FC1D9D /* Frameworks */,
+				E6118BC81D29993400FC1D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnicornIntents;
+			productName = UnicornIntents;
+			productReference = E6118BCA1D29993400FC1D9D /* UnicornIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E6118BD21D29993400FC1D9D /* UnicornIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6118BE41D29993400FC1D9D /* Build configuration list for PBXNativeTarget "UnicornIntentsUI" */;
+			buildPhases = (
+				E6118BCF1D29993400FC1D9D /* Sources */,
+				E6118BD01D29993400FC1D9D /* Frameworks */,
+				E6118BD11D29993400FC1D9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnicornIntentsUI;
+			productName = UnicornIntentsUI;
+			productReference = E6118BD31D29993400FC1D9D /* UnicornIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6118B8D1D2998FF00FC1D9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Mac Bellingrath";
+				TargetAttributes = {
+					E6118B941D2998FF00FC1D9D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UQFL2U85FV;
+						DevelopmentTeamName = "McMillan Bellingrath";
+						ProvisioningStyle = Automatic;
+					};
+					E6118BA81D2998FF00FC1D9D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UQFL2U85FV;
+						DevelopmentTeamName = "McMillan Bellingrath";
+						ProvisioningStyle = Automatic;
+						TestTargetID = E6118B941D2998FF00FC1D9D;
+					};
+					E6118BB31D2998FF00FC1D9D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UQFL2U85FV;
+						DevelopmentTeamName = "McMillan Bellingrath";
+						ProvisioningStyle = Automatic;
+						TestTargetID = E6118B941D2998FF00FC1D9D;
+					};
+					E6118BC91D29993400FC1D9D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UQFL2U85FV;
+						DevelopmentTeamName = "McMillan Bellingrath";
+						ProvisioningStyle = Automatic;
+					};
+					E6118BD21D29993400FC1D9D = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UQFL2U85FV;
+						DevelopmentTeamName = "McMillan Bellingrath";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E6118B901D2998FF00FC1D9D /* Build configuration list for PBXProject "Unicorn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6118B8C1D2998FF00FC1D9D;
+			productRefGroup = E6118B961D2998FF00FC1D9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6118B941D2998FF00FC1D9D /* Unicorn */,
+				E6118BA81D2998FF00FC1D9D /* UnicornTests */,
+				E6118BB31D2998FF00FC1D9D /* UnicornUITests */,
+				E6118BC91D29993400FC1D9D /* UnicornIntents */,
+				E6118BD21D29993400FC1D9D /* UnicornIntentsUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6118B931D2998FF00FC1D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BA31D2998FF00FC1D9D /* LaunchScreen.storyboard in Resources */,
+				E6118BA01D2998FF00FC1D9D /* Assets.xcassets in Resources */,
+				E6118B9E1D2998FF00FC1D9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BA71D2998FF00FC1D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BB21D2998FF00FC1D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BC81D29993400FC1D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BD11D29993400FC1D9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BDC1D29993400FC1D9D /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6118B911D2998FF00FC1D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BEC1D299A3900FC1D9D /* UNCollectionViewController.swift in Sources */,
+				E6118B991D2998FF00FC1D9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BA51D2998FF00FC1D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BAE1D2998FF00FC1D9D /* UnicornTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BB01D2998FF00FC1D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BB91D2998FF00FC1D9D /* UnicornUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BC61D29993400FC1D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BCD1D29993400FC1D9D /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6118BCF1D29993400FC1D9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6118BD91D29993400FC1D9D /* WorkoutIntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6118BAB1D2998FF00FC1D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6118B941D2998FF00FC1D9D /* Unicorn */;
+			targetProxy = E6118BAA1D2998FF00FC1D9D /* PBXContainerItemProxy */;
+		};
+		E6118BB61D2998FF00FC1D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6118B941D2998FF00FC1D9D /* Unicorn */;
+			targetProxy = E6118BB51D2998FF00FC1D9D /* PBXContainerItemProxy */;
+		};
+		E6118BDF1D29993400FC1D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6118BD21D29993400FC1D9D /* UnicornIntentsUI */;
+			targetProxy = E6118BDE1D29993400FC1D9D /* PBXContainerItemProxy */;
+		};
+		E6118BE21D29993400FC1D9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6118BC91D29993400FC1D9D /* UnicornIntents */;
+			targetProxy = E6118BE11D29993400FC1D9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6118B9C1D2998FF00FC1D9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6118B9D1D2998FF00FC1D9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E6118BA11D2998FF00FC1D9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6118BA21D2998FF00FC1D9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E6118BDA1D29993400FC1D9D /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6118BDB1D29993400FC1D9D /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6118BBB1D2998FF00FC1D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6118BBC1D2998FF00FC1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6118BBE1D2998FF00FC1D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Unicorn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Unicorn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E6118BBF1D2998FF00FC1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Unicorn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Unicorn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E6118BC11D2998FF00FC1D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UnicornTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.UnicornTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unicorn.app/Unicorn";
+			};
+			name = Debug;
+		};
+		E6118BC21D2998FF00FC1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UnicornTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.UnicornTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unicorn.app/Unicorn";
+			};
+			name = Release;
+		};
+		E6118BC41D2998FF00FC1D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UnicornUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.UnicornUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Unicorn;
+			};
+			name = Debug;
+		};
+		E6118BC51D2998FF00FC1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UnicornUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.UnicornUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Unicorn;
+			};
+			name = Release;
+		};
+		E6118BE51D29993400FC1D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UnicornIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Unicorn.UnicornIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E6118BE61D29993400FC1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UnicornIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Unicorn.UnicornIntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E6118BE81D29993400FC1D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UnicornIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Unicorn.UnicornIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E6118BE91D29993400FC1D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UnicornIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.macbellingrath.Unicorn.UnicornIntents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6118B901D2998FF00FC1D9D /* Build configuration list for PBXProject "Unicorn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6118BBB1D2998FF00FC1D9D /* Debug */,
+				E6118BBC1D2998FF00FC1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6118BBD1D2998FF00FC1D9D /* Build configuration list for PBXNativeTarget "Unicorn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6118BBE1D2998FF00FC1D9D /* Debug */,
+				E6118BBF1D2998FF00FC1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6118BC01D2998FF00FC1D9D /* Build configuration list for PBXNativeTarget "UnicornTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6118BC11D2998FF00FC1D9D /* Debug */,
+				E6118BC21D2998FF00FC1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6118BC31D2998FF00FC1D9D /* Build configuration list for PBXNativeTarget "UnicornUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6118BC41D2998FF00FC1D9D /* Debug */,
+				E6118BC51D2998FF00FC1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6118BE41D29993400FC1D9D /* Build configuration list for PBXNativeTarget "UnicornIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6118BE51D29993400FC1D9D /* Debug */,
+				E6118BE61D29993400FC1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6118BE71D29993400FC1D9D /* Build configuration list for PBXNativeTarget "UnicornIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6118BE81D29993400FC1D9D /* Debug */,
+				E6118BE91D29993400FC1D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6118B8D1D2998FF00FC1D9D /* Project object */;
+}
